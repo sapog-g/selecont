@@ -1,23 +1,15 @@
 <p align="center">
-  <img src="brand/png/selecont-wordmark-on-light-2400.png" width="360" alt="selecont">
+  <img src="brand/png/selecont-wordmark-dark.png" width="360" alt="selecont">
 </p>
 
 <p align="center"><strong>One profile. Different contexts.</strong></p>
 
-<p align="center">
-  <a href="https://github.com/sapog-g/selecont/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/sapog-g/selecont/actions/workflows/ci.yml/badge.svg"></a>
-  <img alt="Python 3.11" src="https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white">
-  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-0.141-009688?logo=fastapi&logoColor=white">
-  <img alt="tests" src="https://img.shields.io/badge/tests-95%20passing-2ea44f">
-  <img alt="status" src="https://img.shields.io/badge/status-working%20prototype-4A90E2">
-</p>
+<p align="center"><sub>Working research prototype · FastAPI · Python 3.11 · 95 automated tests</sub></p>
 
 <p align="center">
-  <a href="https://sapog-g.github.io/selecont/"><strong>Animated pitch deck</strong></a>
+  <a href="deck/presentation/exports/selecont-itmo-2026-ru-v3.pdf">Pitch deck · RU</a>
   ·
-  <a href="deck/presentation/exports/selecont-itmo-2026-ru-v3.pdf">PDF · RU</a>
-  ·
-  <a href="deck/presentation/exports/selecont-itmo-2026-en-v3.pdf">PDF · EN</a>
+  <a href="deck/presentation/exports/selecont-itmo-2026-en-v3.pdf">EN</a>
 </p>
 
 ![selecont pitch deck cover](docs/media/selecont-cover.png)
@@ -111,8 +103,8 @@ This repository contains demo code and synthetic accounts only. Do not use real 
 
 ## Author
 
-**Georgy Sapogovsky** · founder and developer · ITMO University
+**George Sapogovsky** · founder and developer · ITMO University
 
 ## Rights
 
-No reuse license has been granted. © 2026 Georgy Sapogovsky. All rights reserved.
+No reuse license has been granted. © 2026 George Sapogovsky. All rights reserved.

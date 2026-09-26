@@ -1,12 +1,6 @@
 name: Deploy animated pitch deck
 
-on:
-  push:
-    branches: [main]
-    paths:
-      - "deck/presentation/**"
-      - ".github/workflows/pages.yml"
-  workflow_dispatch:
+on: workflow_dispatch
 
 permissions:
   contents: read
