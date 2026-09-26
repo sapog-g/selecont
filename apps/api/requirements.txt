@@ -1,0 +1,6 @@
+fastapi>=0.118,<1
+uvicorn>=0.35,<1
+argon2-cffi>=25,<26
+httpx>=0.28,<1
+Pillow>=12.3,<13
+python-multipart>=0.0.32,<1

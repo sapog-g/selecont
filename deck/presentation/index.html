@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>selecont · pitch deck</title>
+  <link rel="stylesheet" href="motion.css?v=20260925-r3">
+  <link rel="stylesheet" href="story.css?v=20260925-r3">
+</head>
+<body>
+  <header class="review-bar">
+    <div><strong>selecont</strong><span>Акселератор ИТМО · 2026</span></div>
+    <nav>
+      <button id="restart" type="button">Сначала</button>
+      <button id="language" type="button">EN</button>
+      <label>Темп
+        <select id="speed">
+          <option value="900">Плавно · 0,90 с</option>
+          <option value="720">Быстрее · 0,72 с</option>
+          <option value="1200">Спокойно · 1,20 с</option>
+        </select>
+      </label>
+      <button id="previous" type="button" aria-label="Назад">←</button>
+      <button id="next" type="button" aria-label="Вперёд">→</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="stage-wrap" id="stage-wrap">
+      <section class="stage" id="stage" data-step="0" aria-live="polite">
+        <div class="ambient"></div>
+
+        <div class="logo" role="img" aria-label="selecont"></div>
+
+        <section class="cover-copy copy-layer">
+          <h1 data-copy="cover"></h1>
+        </section>
+
+        <section class="transition-copy copy-layer">
+          <span class="section-name" data-copy="profilesSection"></span>
+          <div class="transition-center">
+            <h1 data-copy="profiles"></h1>
+            <p data-copy="profilesLead"></p>
+          </div>
+        </section>
+
+        <div class="ring-system" aria-hidden="true">
+          <img class="approved-cover-rings" src="assets/rings-selected-b.png" alt="">
+          <img class="approved-transition-rings" src="assets/rings-selected-b-open.png" alt="">
+          <canvas id="ring-canvas" width="1600" height="900"></canvas>
+        </div>
+
+        <section class="profiles-layer" aria-label="Смена версий профиля">
+          <div class="disc-window">
+            <div class="profile-stack" id="profile-stack"></div>
+          </div>
+          <div class="context-stack" id="context-stack"></div>
+        </section>
+
+        <section class="ai-layer" aria-label="AI Privacy Check — будущая функция">
+          <img class="ai-photo" src="assets/grisha-ai-party.png" alt="Гриша на вечеринке с бутылкой">
+          <div class="ai-wash"></div>
+          <div class="logo logo-light" role="img" aria-label="selecont"></div>
+          <span class="ai-name">AI PRIVACY CHECK</span>
+          <div class="ai-copy">
+            <h1 data-copy="ai"></h1>
+            <div class="ai-principles">
+              <span data-copy="beforePublish"></span>
+              <span data-copy="advises"></span>
+              <span data-copy="noAutoChange"></span>
+              <span data-copy="yourDecision"></span>
+            </div>
+          </div>
+          <div class="detector" aria-hidden="true"><b></b></div>
+          <svg class="detector-link" viewBox="0 0 1600 900" aria-hidden="true"><path d="M 1002 663 C 1033 663, 1057 651, 1083 651"/></svg>
+          <aside class="privacy-card">
+            <header><strong data-copy="bottleDetected"></strong><span data-copy="highRisk"></span></header>
+            <p data-copy="privacyAdvice"></p>
+            <div class="privacy-actions"><button type="button" tabindex="-1" data-copy="chooseFriends"></button><button type="button" tabindex="-1" data-copy="publishAnyway"></button></div>
+          </aside>
+          <span class="future-note" data-copy="futureConcept"></span>
+        </section>
+
+        <div class="story-layer" id="story-layer" aria-live="polite">
+<section class="story-slide s-problem" data-story="1"><div class="brand" role="img" aria-label="selecont"></div><span data-t="secProblem" class="eyebrow">Проблема</span><div class="problem-main reveal"><h1 data-t="problemTitle">Не всё хочется<br>показывать <span class="story-accent">всем.</span></h1><p data-t="problemBody">Шутки для друзей, семейные новости и рабочие проекты — для разных людей. Когда эти аудитории оказываются вместе, личным моментом бывает трудно поделиться: он уместен для одних, но не для других.</p></div><div class="context-examples reveal" data-direction="right"><div data-t="exampleFriends" class="example one">«Это поймут мои друзья»</div><div data-t="exampleFamily" class="example two">«Этим хочу поделиться с семьёй»</div><div data-t="exampleWork" class="example three">«Это — для коллег»</div></div><div class="problem-answer reveal" data-direction="up"><p data-t="problemAnswer">С selecont ты выбираешь <span class="story-accent">свой контекст</span> для каждой публикации.</p></div></section>
+<section class="story-slide s-post" data-story="7"><div class="brand" role="img" aria-label="selecont"></div><span data-t="secPost" class="eyebrow">Публикация · взгляд автора</span>
+<div class="post-copy-main reveal"><h1 data-t="postTitle">Один пост.<br><span class="story-accent">Три круга.</span></h1><p data-t="postBody">Гриша выбирает семью, друзей и коллег. Он публикует пост один раз — его видят участники всех трёх выбранных кругов.</p><p data-t="postPrivacy" class="post-detail">Для остальных пост закрыт: <span class="story-accent">Public не выбран.</span></p><div class="post-key" data-t="eulerKey">В центре — <span class="story-accent">общая публикация</span>.<br>Каждый круг — её аудитория.</div></div>
+<div class="euler-diagram reveal" data-direction="right" role="img" aria-label="Один пост в общем пересечении трёх выбранных аудиторий">
+<svg viewBox="0 0 790 700" aria-hidden="true"><circle cx="300" cy="260" r="260" fill="#9dc9f5" fill-opacity=".22" stroke="#78b3f1" stroke-width="2.5"/><circle cx="490" cy="260" r="260" fill="#78b3f1" fill-opacity=".18" stroke="#4286de" stroke-width="2.5"/><circle cx="395" cy="420" r="260" fill="#4286de" fill-opacity=".13" stroke="#528fe0" stroke-width="2.5"/></svg>
+<span class="euler-label euler-family" data-t="family">Семья</span><span class="euler-label euler-friends" data-t="friends">Друзья</span><span class="euler-label euler-work" data-t="colleagues">Коллеги</span>
+<article class="euler-post"><div class="euler-post-author">@grisha</div><img src="assets/grisha-family-post.png" alt="Гриша с семьёй"><div data-t="oneSharedPost">Один пост</div></article>
+</div><span data-t="eulerNote" class="quiet-note bottom-note">Схема аудитории · круги выбирает автор</span></section>
+<section class="story-slide s-conversations" data-story="8"><div class="brand" role="img" aria-label="selecont"></div><span data-t="secDiscuss" class="eyebrow">Обсуждение</span><div class="heading reveal"><h1 data-t="discussTitle">Один пост. <span class="story-accent">Разные разговоры.</span></h1><p data-t="discussBody">Семья и друзья видят один снимок, но комментарии и ответы остаются внутри своей аудитории.</p></div><div class="threads"><div class="thread-column reveal"><h2 data-t="viewFamily">Так видит семья</h2><article class="thread-card"><div class="thread-post"><img src="assets/grisha-family-post.png" alt=""><div><span>@grisha</span><p data-t="samePhoto">Одна и та же публикация</p></div></div><h3 data-t="commentsLabel">Комментарии под постом</h3><div class="demo-comment "><span class="comment-user">@mama</span><p data-t="cm1">Какой хороший был день!</p></div><div class="reply-tree"><div class="demo-comment "><span class="comment-user">@grisha</span><p data-t="cm2">Надо собраться ещё раз.</p></div><div class="reply-tree"><div class="demo-comment deleted"><p data-t="deletedReply">Ответ удалён</p></div></div></div></article></div><div class="thread-column reveal"><h2 data-t="viewFriends">Так видят друзья</h2><article class="thread-card"><div class="thread-post"><img src="assets/grisha-family-post.png" alt=""><div><span>@grisha</span><p data-t="samePhoto">Одна и та же публикация</p></div></div><h3 data-t="commentsLabel">Комментарии под постом</h3><div class="demo-comment "><span class="comment-user">@max</span><p data-t="cm3">Это тот самый старый альбом?</p></div><div class="reply-tree"><div class="demo-comment deleted"><p data-t="deletedComment">Комментарий удалён</p></div><div class="reply-tree"><div class="demo-comment "><span class="comment-user">@grisha</span><p data-t="cm4">Да! Нашли его на выходных.</p></div></div></div></article></div></div><div class="discussion-notes"><p data-t="deletionNote"><span class="story-accent">Удалён текст — сохранена ветка.</span> Ответы других людей остаются на месте.</p><p data-t="likeNote">Лайки — общие для поста.</p></div></section>
+<section class="story-slide s-access" data-story="9"><div class="brand" role="img" aria-label="selecont"></div><span data-t="secRights" class="eyebrow">Пять уровней доступа</span><div class="heading reveal"><h1 data-t="rightsTitle">Кто видит <span class="story-accent">твой контекст</span></h1><p data-t="rightsLead">Подписаться недостаточно. Доступ к частному кругу даёт автор.</p></div><div class="reveal"><table class="access-table"><thead><tr><th></th><th data-t="anonymous">Аноним</th><th data-t="registered">Зарегистрирован</th><th data-t="outside">Подписчик вне круга</th><th data-t="inside">Подписчик в круге</th><th data-t="author">Автор</th></tr></thead><tbody>
+              <tr><td data-t="publicProfile">Открытый профиль и пост</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td data-t="publicComment">Комментарий к Public-посту</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td data-t="privateProfile">Частный профиль и пост</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td data-t="privateDiscuss">Частное обсуждение</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td data-t="manageCircles">Управление кругами</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td></tr>
+            </tbody></table></div><p data-t="rightsNote" class="quiet-note bottom-note">Названия и состав кругов скрыты от зрителей. Автор управляет всеми своими кругами.</p></section>
+<section class="story-slide dark s-control" data-story="10"><div class="brand" role="img" aria-label="selecont"></div><span data-t="secControl" class="eyebrow">Контроль доступа</span><div class="heading reveal"><h1 data-t="controlTitle">Ты решаешь, <span class="story-accent">кто остаётся в круге.</span></h1><p data-t="controlBody">Добавляешь человека — он видит выбранный профиль и посты. Убираешь из круга — доступ к ним закрывается.</p></div><div class="control-flow"><article class="access-state reveal"><div class="state-top"><span>@alex</span><span data-t="inCircle" class="status-pill">В круге «Друзья»</span></div><h2 data-t="beforeTitle">Видит личную сторону профиля</h2><div class="access-lines"><span>✓</span><span data-t="privatePosts">Посты для друзей</span><span>✓</span><span data-t="privateComments">Обсуждения с друзьями</span></div></article><div class="control-action reveal"><span data-t="removePerson">Убрать<br>из круга</span><b>→</b></div><article class="access-state after reveal" data-direction="right"><div class="state-top"><span>@alex</span><span data-t="publicOnly" class="status-pill">Видит Public</span></div><h2 data-t="afterTitle">Видит только открытую часть</h2><div class="access-lines"><span>—</span><span data-t="noPrivatePosts">Личные посты недоступны</span><span>—</span><span data-t="noPrivateComments">Частные ветки недоступны</span></div></article></div><p data-t="controlNote" class="quiet-note bottom-note">Кругами управляешь ты. Их названия и участники видны только тебе.</p></section>
+<section class="story-slide s-proof" data-story="11"><div class="brand" role="img" aria-label="selecont"></div><span data-t="secProof" class="eyebrow">Что уже работает</span><div class="heading reveal"><h1 data-t="proofTitle">От профиля до обсуждения — <span class="story-accent">в рабочем демо.</span></h1></div><div class="proof-grid"><article class="proof-card reveal"><h2 data-t="proofCircles">Круги и профили</h2><div class="screen-frame"><img src="assets/demo-contexts.png" alt="Рабочий локальный интерфейс"></div><p data-t="proofCirclesBody">Разные био, фото и состав аудитории</p></article><article class="proof-card reveal"><h2 data-t="proofPost">Публикация</h2><div class="screen-frame"><img src="assets/demo-compose.png" alt="Рабочий локальный интерфейс"></div><p data-t="proofPostBody">Один пост для выбранных кругов</p></article><article class="proof-card reveal"><h2 data-t="proofComments">Обсуждения</h2><div class="screen-frame"><img src="assets/demo-comments.png" alt="Рабочий локальный интерфейс"></div><p data-t="proofCommentsBody">Ответы, удаление и отдельные ветки</p></article></div><div class="proof-bottom reveal"><p data-t="proofSummary">Вход и сессии · подписка · фото · общий лайк · отзыв доступа</p><div class="test-count"><span>95</span><small data-t="checks">проверок пройдено</small></div></div><span data-t="proofNote" class="quiet-note bottom-note">Настоящие экраны локального продукта · тестовые аккаунты · 25.09.2026</span></section>
+<section class="story-slide s-compare" data-story="12"><div class="brand" role="img" aria-label="selecont"></div><span data-t="secCompare" class="eyebrow">Что связывает контекст</span><div class="heading reveal"><h1 data-t="compareTitle">Один контекст — <span class="story-accent">три части общения.</span></h1><p data-t="compareLead">Автор выбирает круг один раз: для него складываются версия профиля, доступ к публикации и отдельный разговор.</p></div><div class="context-journey"><article class="journey-step reveal"><span class="journey-index" data-t="journeyIndexProfile">01 / ПРОФИЛЬ</span><div class="journey-visual"><img src="assets/grisha-friends.png" alt="Гриша с друзьями"></div><h2 data-t="journeyProfile">Своя сторона</h2><p data-t="journeyProfileBody">Для друзей — одно фото и описание. Для семьи или коллег — другое.</p></article><article class="journey-step reveal" data-direction="up"><span class="journey-index" data-t="journeyIndexPost">02 / ПОСТ</span><div class="journey-visual"><img src="assets/grisha-family-post.png" alt="Гриша с семьёй"></div><h2 data-t="journeyPost">Нужные люди</h2><p data-t="journeyPostBody">Один пост может быть открыт сразу нескольким выбранным кругам.</p></article><article class="journey-step reveal" data-direction="right"><span class="journey-index" data-t="journeyIndexTalk">03 / ОБСУЖДЕНИЕ</span><div class="journey-visual journey-chat"><span>@mama<br><small data-t="journeyComment">Какой хороший день!</small></span><span>@grisha<br><small data-t="journeyReply">Соберёмся ещё раз.</small></span></div><h2 data-t="journeyTalk">Свой разговор</h2><p data-t="journeyTalkBody">У каждого круга своя ветка ответов под общей публикацией.</p></article></div><span data-t="compareNote" class="quiet-note bottom-note">Профиль, пост и обсуждение связаны правилами доступа одного круга.</span></section>
+<section class="story-slide dark s-suggestions" data-story="13"><div class="brand" role="img" aria-label="selecont"></div><span data-t="secSuggest" class="eyebrow">Context Suggestions · будущая функция</span><div class="suggest-copy reveal"><h1 data-t="suggestTitle">Система предлагает.<br><span class="story-accent">Ты выбираешь круг.</span></h1><p data-t="suggestBody">Для нового подписчика появляется рекомендация. Её видишь только ты: можно подтвердить предложенный круг или выбрать другой.</p><p data-t="suggestNoAuto" class="suggest-detail">Без твоего решения человек <span class="story-accent">не попадёт в частный круг.</span></p></div><article class="suggest-interface reveal" data-direction="right"><span data-t="authorView" class="interface-label">Только у автора</span><div class="new-follower"><div class="initial-avatar">A</div><div><span>@alex</span><p data-t="newFollower">Новый подписчик</p></div></div><p data-t="suggestedCircle" class="ui-label">Предлагаемый круг</p><div data-t="colleagues" class="suggested-value">Коллеги</div><div class="mock-actions"><span data-t="confirmCircle" class="primary-action">Подтвердить</span><span data-t="chooseOther" class="secondary-action">Выбрать другой</span></div></article><span data-t="futureNote" class="quiet-note bottom-note">Концепт будущей функции</span></section>
+<section class="story-slide s-pilot" data-story="15"><div class="brand" role="img" aria-label="selecont"></div><span data-t="secPilot" class="eyebrow">Следующий этап</span><div class="heading reveal"><h1 data-t="pilotTitle">От работающего демо — <span class="story-accent">к первым пользователям.</span></h1><p data-t="pilotBody">В акселераторе найдём первых пользователей, проверим удобство продукта на реальных историях и решим, что улучшать дальше.</p></div><div class="pilot-path"><article class="pilot-step reveal"><span class="large-number">01</span><h2 data-t="pilotOneTitle">Найти первых людей</h2><p data-t="pilotOneBody">Пригласить тех, кому важно делиться разным с разными людьми.</p></article><article class="pilot-step reveal"><span class="large-number">02</span><h2 data-t="pilotTwoTitle">Посмотреть в деле</h2><p data-t="pilotTwoBody">Понятно ли, как настроить круги и опубликовать пост?</p></article><article class="pilot-step reveal"><span class="large-number">03</span><h2 data-t="pilotThreeTitle">Собрать обратную связь</h2><p data-t="pilotThreeBody">Что оказалось полезным и что стоит изменить в первую очередь?</p></article></div><span data-t="pilotNote" class="quiet-note bottom-note">Это следующий шаг; первые пользователи и результаты ещё впереди.</span></section>
+<section class="story-slide dark s-ask" data-story="16"><span data-t="secAsk" class="eyebrow">Основатель · заявка в Акселератор ИТМО</span><div class="final-layout"><div class="final-copy reveal"><h1 data-t="askTitle">Георгий<br>Сапоговский</h1><p data-t="askBody">Ищу место в Акселераторе ИТМО, <span class="story-accent">трекера и помощь с поиском первых пользователей</span> selecont.</p></div><div class="final-brand reveal" data-direction="right"><div class="final-wordmark" role="img" aria-label="selecont"></div></div></div><span data-t="askNote" class="quiet-note bottom-note">Осень 2026</span></section>
+        </div>
+
+        <span class="page" id="page-number">01</span>
+      </section>
+    </div>
+    <p class="instruction" id="instruction">Клик по кадру или → — следующий шаг. ← — назад.</p>
+  </main>
+  <script src="ring-morph.js?v=20260923-r4"></script>
+  <script src="motion.js?v=20260925-r3"></script>
+  <script src="story.js?v=20260925-r3"></script>
+</body>
+</html>

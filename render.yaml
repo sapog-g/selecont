@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: selecont-demo
+    runtime: python
+    region: frankfurt
+    plan: 0.5c-512mb
+    numInstances: 1
+    buildCommand: pip install -r apps/api/requirements.lock
+    startCommand: sh apps/api/scripts/start-one.sh
+    healthCheckPath: /healthz
+    autoDeployTrigger: off
+    maxShutdownDelaySeconds: 30
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.16
+      - key: SELECONT_BIND_HOST
+        value: 0.0.0.0
+      - key: SELECONT_DATABASE
+        value: /var/data/selecont.sqlite3
+      - key: SELECONT_MEDIA_ROOT
+        value: /var/data/media
+      - key: SELECONT_COOKIE_SECURE
+        value: "1"
+      - key: SELECONT_SECRET_KEY
+        generateValue: true
+    disk:
+      name: selecont-data
+      mountPath: /var/data
+      sizeGB: 1

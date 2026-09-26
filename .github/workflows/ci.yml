@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: apps/api/requirements.lock
+
+      - name: Install locked dependencies
+        run: python -m pip install -r apps/api/requirements.lock
+
+      - name: Check dependency consistency
+        run: python -m pip check
+
+      - name: Run test suite
+        run: python -m unittest discover -s apps/api/tests -v

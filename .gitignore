@@ -1,0 +1,30 @@
+.pnpm-store/
+.venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.sqlite3-*
+*.db
+.env
+.env.*
+*.log
+*.key
+*.pem
+.DS_Store
+
+# Runtime data and uploaded media never belong in source control.
+apps/api/var/
+
+# Editable deck sources and final small PDF/PPTX stay versioned. Videos do not.
+*.mp4
+*.mov
+*.webm
+
+# Local review checkpoint archives; never commit generated backups.
+artifacts/checkpoints/
+
+# Runtime files in any component
+node_modules/
+*.sqlite
+*.sqlite-*
+*.db-*
