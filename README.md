@@ -7,6 +7,12 @@
 <p align="center"><sub>Working research prototype · FastAPI · Python 3.11 · 95 automated tests</sub></p>
 
 <p align="center">
+  <a href="output/pdf/selecont-pitch-3min-ru.pdf">3-minute pitch · RU</a>
+  ·
+  <a href="output/pdf/selecont-pitch-3min-en.pdf">EN</a>
+  ·
+  <a href="deck/pitch-3min/">interactive source</a>
+  <br>
   <a href="deck/presentation/exports/selecont-itmo-2026-ru-v3.pdf">Pitch deck · RU</a>
   ·
   <a href="deck/presentation/exports/selecont-itmo-2026-en-v3.pdf">EN</a>
@@ -88,7 +94,9 @@ Read [Architecture and privacy](docs/ARCHITECTURE.md) for the design boundaries 
 | Path | Purpose |
 |---|---|
 | `apps/api/` | FastAPI application, domain core, migrations and tests |
+| `deck/pitch-3min/` | 13-frame animated pitch in Russian and English |
 | `deck/presentation/` | Final bilingual pitch deck and its animated web version |
+| `output/pdf/` | Send-ready Russian and English PDF exports of the short pitch |
 | `brand/` | Approved selecont wordmark and symbol assets |
 | `docs/` | Public product and technical documentation |
 | `.github/workflows/` | Test and GitHub Pages automation |

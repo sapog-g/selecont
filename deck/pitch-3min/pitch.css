@@ -1,0 +1,52 @@
+/* Short pitch: retain approved artwork and geometry, simplify the spoken story. */
+#language[hidden]{display:none}.stage{cursor:pointer}.page{right:64px!important;bottom:38px!important;z-index:80}
+.s-problem .problem-main{left:565px;top:352px;width:790px}.s-problem .problem-main h1{font-size:67px;line-height:1.2;letter-spacing:-2.5px}
+.thought{position:absolute;padding:32px 38px;border:1px solid #9dc9f570;border-radius:32px;box-shadow:0 18px 48px #4286de0c;font-size:31px;line-height:1.4;color:#285f98}
+.thought-friends{left:85px;top:190px;width:480px;background:#e5f2ff}.thought-family{right:85px;top:580px;width:555px;background:#cee5ff}.thought-work{left:135px;top:625px;width:425px;background:#9dc9f59c}
+.s-post .post-copy-main{top:232px;width:560px}.s-post .post-copy-main>p{width:550px;font-size:26px}.s-post .post-copy-main .post-detail{font-size:21px}.post-key{font-size:24px}.euler-post img{object-position:center 48%}
+.s-conversations .heading{top:148px}.s-conversations .heading h1{font-size:63px}.threads{top:340px}.thread-card{height:345px;padding:26px 30px}.thread-post{padding-bottom:19px;margin-bottom:20px}.thread-post img{width:100px;height:87px;object-fit:cover;object-position:center 40%}.thread-post p{font-size:19px}.thread-card h3{font-size:20px;color:#527493}.demo-comment{margin-top:25px}.demo-comment p{font-size:27px;line-height:1.4;margin-top:9px}.comment-user{font-size:21px}.discussion-summary{position:absolute;left:80px;bottom:102px;font-size:28px!important;color:#4286de!important}
+.s-proof .proof-grid{top:330px}.s-proof .heading h1{font-size:59px}.s-proof .proof-bottom{bottom:114px}.s-proof .bottom-note{bottom:57px}
+.concept-note,.story-slide.dark .concept-note{position:absolute;left:80px;bottom:48px;font:400 16px/1.4 Comfortaa,sans-serif;letter-spacing:.025em;text-transform:none;color:#9dc9f5;opacity:1;z-index:40}
+.ai-layer .logo{left:80px;top:48px;width:212px;height:43px}.ai-layer .ai-photo{top:120px;right:65px;width:705px;height:660px;object-fit:cover;object-position:48% center;border-radius:40px}
+.ai-layer .ai-copy{left:80px;top:200px;width:720px}.ai-layer .ai-copy h1{font-size:64px;line-height:1.18;width:690px}.ai-layer .ai-principles{width:675px;gap:16px}.ai-layer .ai-principles span{font-size:17px}
+.ai-name{top:73px;right:80px;font-size:17px}.ai-layer .privacy-card{left:auto;right:85px;top:540px;bottom:auto;width:500px;min-height:0;padding:24px 25px;border-radius:30px}.privacy-card header strong{font-size:20px}.privacy-card header>span{font-size:12px}.privacy-card>p{font-size:19px;line-height:1.4}.privacy-actions{gap:9px}.privacy-actions button{font-size:15px}
+.ai-layer .detector,.ai-layer .detector-link{display:none}
+.s-suggestions .suggest-copy{top:233px}.s-suggestions .suggest-copy h1{font-size:60px}.s-suggestions .suggest-copy>p{font-size:26px}.s-suggestions .suggest-interface{top:224px}
+.final-phase{position:absolute;inset:0}.plus-copy{position:absolute;left:80px;top:235px}.hypothesis{font-size:18px;letter-spacing:.08em;color:#9dc9f5}.plus-copy h1{font-size:91px;margin:28px 0 32px}.plus-copy>p{font-size:29px}.plus-copy .plus-detail{font-size:28px;line-height:1.55;margin-top:32px;color:#b9dcfb}.plus-side{position:absolute;right:100px;top:400px;width:450px;border-top:1px solid #9dc9f57a;padding-top:24px}.plus-side>span{font-size:22px;color:#9dc9f5}.plus-side p{font-size:34px!important;line-height:1.4;margin-top:22px}
+.ask-phase .final-layout{top:290px;gap:70px}.ask-phase .final-copy h1{font-size:64px}.ask-phase .final-copy .founder-role{font-size:20px;margin-top:22px;color:#9dc9f5}.ask-phase .final-copy>p:last-child{font-size:28px;margin-top:35px}.ask-phase .final-brand{height:175px;align-items:center}.final-motto{position:absolute;left:80px;bottom:128px;font-size:37px!important;color:#9dc9f5!important}
+body.presenting{background:#031d30}.presenting .review-bar,.presenting .instruction{display:none}.presenting main{padding:0;max-width:none;height:100vh;display:flex;align-items:center;justify-content:center}.presenting .stage-wrap{box-shadow:none;margin:0}
+@media(prefers-reduced-motion:reduce){.reveal{will-change:auto}}
+/* Fit the complete new story photographs inside the rotating quadrant. */
+.profile-head .avatar{width:200px;height:235px;border-width:7px}.profile-head .identity{width:395px;padding-top:14px}.profile-head .identity p{margin-top:23px}.profile-state .post{top:270px;width:420px}.profile-state .post header{height:60px;padding:10px 18px}.profile-state .post header img{width:35px;height:35px}.profile-state .post header strong{font-size:19px}.profile-state .post header span{font-size:14px}.profile-state .post-photo{height:280px;object-fit:cover;object-position:center}.profile-state .post-actions,.profile-state .post-caption{display:none}
+/* Keep the detail being discussed visible beside its explanation. */
+.ai-layer .ai-copy{top:175px}.ai-layer .privacy-card{left:80px;right:auto;top:590px;width:675px;padding:22px 25px}.ai-layer .privacy-card>p{margin:17px 0}.ai-layer .detector{display:block;left:1202px;top:560px;width:82px;height:82px}
+.ai-layer .privacy-actions{display:flex;flex-direction:row;flex-wrap:wrap;gap:12px;align-items:center}.ai-layer .privacy-actions button{width:auto}
+
+/* Approved rehearsal refinements, 13 October. */
+.profile-state .post{top:245px}
+.context-stack{top:310px}
+.profile-head .avatar{height:210px}
+.avatar img{object-position:50% 0%}
+.post header img{object-position:50% 0%;flex-shrink:0}
+.thought-family{top:535px}
+.ai-layer .privacy-card{height:230px;top:590px}
+.ai-layer .ai-photo{height:700px}
+.ai-layer .ai-wash{display:none}
+.selected-audience{font-size:16px;margin-top:14px;color:#31597d}
+.selected-audience strong{font-weight:500;color:#06182b}
+.ai-layer .privacy-card>p{margin:12px 0 16px}
+.ai-layer .detector{top:574px}
+.ai-layer .detector-link{display:block;pointer-events:none}
+.plus-copy{top:195px;width:1350px}
+.plus-copy .plus-priority{font-size:27px;color:#9dc9f5;margin-top:42px}
+.ai-layer .privacy-card{top:586px}
+.ai-layer .ai-photo{height:696px}
+.plus-copy .plus-priority{color:#9dc9f5!important}
+
+/* Two concise final states, approved after rehearsal. */
+.plus-copy{left:80px;right:80px;top:310px;width:auto;text-align:center}
+.plus-copy h1{font-size:112px;margin:0 0 44px}
+.plus-copy>p{font-size:31px;color:#b9dcfb}
+.ask-phase .final-brand{height:auto;min-height:175px;flex-direction:column;padding-top:21px;gap:32px}
+.ask-phase .final-wordmark{flex:none}
+.ask-phase .final-motto{position:static;margin:0;font-size:27px!important;line-height:1.4;text-align:center;white-space:nowrap}
